@@ -1,11 +1,17 @@
 <div class="container-nav">
 
   <div class="logo">
+    <img src="../assets/cup-2121812_960_720.png" alt="">
     <img src="../assets/cup-2121812_960_720.png"  alt="">
     <p><a id="titulo" [routerLink]="'/'">{{ nomeDoApp }}</a></p>
   </div>
 
   <nav>
+    <ul>
+      <li><a [routerLink]="'/cadastro'" (click)="isMenuCollapsed = true">Cadastro</a></li>
+      <li><a [routerLink]="'/feedback'" (click)="isMenuCollapsed = true">Feedback</a></li>
+      <li class="login"><a [routerLink]="'/login'" (click)="isMenuCollapsed = true"><img src="../assets/login1.png" alt=""></a></li>
+    </ul>
             <ul>
               <li><a  [routerLink]="'/cadastro'" (click)="isMenuCollapsed = true">Cadastro</a></li>
               <li><a  [routerLink]="'/feedback'" (click)="isMenuCollapsed = true">Feedback</a></li>
