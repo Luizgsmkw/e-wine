@@ -58,3 +58,63 @@
     </div>
   </footer>
 </div>
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="foto" [src]="images[0]" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="foto" [src]="images[1]" alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="foto" [src]="images[2]" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </ng-template>
+    
+      </ngb-carousel>
+      <footer>
+        <div class="container-informacoes">
+            <div class="contatos">
+                <h3>Contato</h3>
+                <ul>
+                <li>
+                    Rua Cabral, 1578 – Bela Vista
+                    São Paulo/SP – CEP 05593-970</li>
+                <li><i class="bi bi-envelope"></i> contato@ewine.com.br</li>
+                <li><i class="bi bi-whatsapp"></i>(12) 98180-3634</li>
+                <li><i class="bi bi-instagram"></i>@e-wine</li>
+                </ul>
+            </div>
+            <div class="minha-conta">
+                <h3>Minha conta</h3>
+                <ul>
+                <li>Minha conta</li>
+                <li>termos de uso</li>
+                <li>Politica de privacidade</li>
+                </ul>
+            </div>
+            <div class="cartoes">
+                <img src="../assets/Visa-icon.png" alt="">
+                <img class="card-master" src="../assets/Mastercard-icon-2.png" alt="">
+                <img src="../assets/Paypal-icon.png" alt="">
+            </div>
+        </div>
+    </footer>
+  </div>
+
