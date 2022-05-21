@@ -13,6 +13,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ProdutoComponent } from './components/produto/produto.component';
+import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
+import { ColaboradorComponent } from './components/colaborador/colaborador.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProdutoComponent } from './components/produto/produto.component';
     NotFoundComponent,
     NavbarComponent,
     ProdutosComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    NovoProdutoComponent,
+    ColaboradorComponent
   ],
   imports: [
     BrowserModule,
