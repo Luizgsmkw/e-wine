@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CategoriaProduto, Produto } from 'src/app/models/produto';
 @Component({
   selector: 'app-produto',
   templateUrl: './produto.component.html',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutoComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  @Input('dadoProduto') produto! : Produto; 
+  @Output() onCarrinho = new EventEmitter<Produto>();
+  
+    precoDesconto(){
+    return this.produto.preco - (this.produto.preco * this.produto.desconto);
+     }
+  
+    constructor() { }
+    onComprar() {
+      alert("Produto adicionado no carrinho!");
+      this.onCarrinho.emit(this.produto);
+    }
+    ngOnInit(): void {
+    }
+  
   }
-
-}
