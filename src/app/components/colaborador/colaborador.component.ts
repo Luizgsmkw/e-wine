@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, ValidationErrors, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-colaborador',
@@ -6,17 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colaborador.component.css']
 })
 export class ColaboradorComponent implements OnInit {
+  constructor(private fb: FormBuilder) { }
 
-  email: string = ''; //guardar o valor digitado
-  senha: string = '';
-
+  loginForm= this.fb.group({
+  nome: ['', [Validators.required, Validators.minLength(5)]], //começa vazio, e cria validador
+  email: ['', [Validators.required, Validators.email]],
+});
+//utiliza o get para que não seja necessário utilizar lá na frente, no ngIg um linha grande p pegar ficou só: *ngIf="nome?.touched && nome?.invalid"
+  get nome(){
+    return this.loginForm.get('nome');
+  }
+  get email(){
+    return this.loginForm.get('email');
+  }
   onSubmit(){
-    alert(`Bem-vindo(a) ${this.email}`);
+    alert(`Seja bem-vindo! Colaborador Logado`);
   }
 
-  constructor() { }
+ 
 
   ngOnInit(): void {
   }
-
 }

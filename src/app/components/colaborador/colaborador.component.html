@@ -1,18 +1,27 @@
-<h1> Área do Colaborador</h1>
-<form #loginForm="ngForm" class="m-1" (onSubmit)="onSubmit()">
+<h1 class="titulo"> Área do Colaborador</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1">
   <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input #emailInp="ngModel" [(ngModel)]="email" id="email" name="email" type="email" class="form-control" placeholder="Seu email" required />
-    <small *ngIf="emailInp.touched && emailInp.invalid" class="text-danger">Campo inválido</small>
+    <label for="nome" class="form-label">Nome</label>
+    <input formControlName="nome" id="nome" type="text" class="form-control" />
+    <small class="text-danger" *ngIf="nome?.touched && nome?.invalid">
+      <span *ngIf="nome?.hasError('required')">O nome é obrigatório!</span>
+      <span *ngIf="nome?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
+    </small>
+    <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
   </div>
 
   <div class="mb-3">
-    <label for="senha" class="form-label">Senha</label>
-    <input #senhaInp="ngModel" [(ngModel)]="senha" id="senha" name="senha" type="password" class="form-control" placeholder="Sua senha" required />
-    <small *ngIf="senhaInp.touched && senhaInp.invalid" class="text-danger">Campo inválido</small>
+    <label for="Email" class="form-label">Email</label>
+    <input formControlName="email" id="email" type="text" class="form-control" />
+    <small class="text-danger" *ngIf="email?.touched && email?.invalid">
+      <span *ngIf="email?.hasError('required')">O email é obrigatório!</span>
+      <span *ngIf="email?.hasError('email')">Formato de email inválido!</span>
+
+    </small>
   </div>
   <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
 </form>
+<a [routerLink]="'/novo-produto'" class="btn btn-primary btn-sm">Novo Produto</a>
 
 <!---
 Criar link para página de cadastrar novo produto!!!!!
