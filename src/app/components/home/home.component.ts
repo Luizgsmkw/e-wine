@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent  {
  
-  images = ['https://cdn.pixabay.com/photo/2015/04/25/03/09/cork-738603_960_720.jpg', 'https://cdn.pixabay.com/photo/2017/03/27/13/36/champagne-2178775_960_720.jpg', 'https://cdn.pixabay.com/photo/2017/06/27/14/37/wines-2447514_960_720.jpg'];
+  images = ['https://st.depositphotos.com/1258191/2745/i/600/depositphotos_27453831-stock-photo-wine.jpg', 'https://media.istockphoto.com/photos/three-glasses-of-white-rose-and-red-wine-on-a-wooden-barrel-picture-id1301017778?k=20&m=1301017778&s=612x612&w=0&h=ITey6o-GGEQKANHjKyH0YxG87zAkT37TyFQpv0VG1Hg='];
 
   constructor() {
     // customize default values of carousels used by this component tree

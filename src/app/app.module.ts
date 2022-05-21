@@ -11,6 +11,8 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ProdutoComponent } from './components/produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     FeedbackComponent,
     NotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProdutosComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,

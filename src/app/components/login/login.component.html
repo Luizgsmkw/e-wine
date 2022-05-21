@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <form #loginForm="ngForm" class="m-1" (onSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input #emailInp="ngModel" [(ngModel)]="email" id="email" name="email" type="email" class="form-control" placeholder="Seu email" required />
+          <small *ngIf="emailInp.touched && emailInp.invalid" class="text-danger">Campo inválido</small>
+        </div>
+
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input #senhaInp="ngModel" [(ngModel)]="senha" id="senha" name="senha" type="password" class="form-control" placeholder="Sua senha" required />
+          <small *ngIf="senhaInp.touched && senhaInp.invalid" class="text-danger">Campo inválido</small>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+
+      </form>
+    </div>
+
+    <div class="col" style="margin-top: 30px ;">
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 100%;">
+          </div>
+          <div class="carousel-caption">
+            <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
+
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 100%;">
+          </div>
+          <div class="carousel-caption">
+            <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</div>
