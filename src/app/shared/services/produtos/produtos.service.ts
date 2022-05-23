@@ -78,6 +78,275 @@ private produtos: Produto[] = [
   desconto: 0.3, //0...1  
   categoria: CategoriaProduto.TINTO,
 },
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/2326.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho By Quinta Do Judeu',
+  descricao: 'Vinho tinto, de Portugal, DOC do Douro, de cor vermelho rubi, ao nariz fruta vermelha fresca, na boca e equilibrado, de média a longa profundidade.',
+  uva: 'Touringa Franca',
+  pais: 'Portugal',
+  preco: 149.90,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/191.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Quinta da Estação',
+  descricao: 'Encorpado, mas harmonioso, cheio de frutas e muito equilíbrio. Termina com boa intensidade',
+  uva: 'Tinta Roriz',
+  pais: 'Portugal',
+  preco: 95.40,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/5484.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Cume Alves de Sousa',
+  descricao: 'Encorpado, mas harmonioso, cheio de fruta e um grande equilíbrio. Final com boa intensidade',
+  uva: 'Tinta Barroca',
+  pais: 'Portugal',
+  preco: 130.65,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/190.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Quinta da Estação Branco',
+  descricao: 'Boca fresca, com ótima polpa e delicioso fim de boca frutado',
+  uva: 'Malvasia Tosvana',
+  pais: 'Portugal',
+  preco: 87.78,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/1896.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Versátil Branco',
+  descricao: 'Na boca muito fresco, resultado da boa acidez e final de prova mineral.',
+  uva: 'Viosinho',
+  pais: 'Portugal',
+  preco: 87.98,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/2007.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Herdade Das Albernoas Branco ',
+  descricao: 'No paladar é leve e fresco com bom equilibrio e agradável acidez',
+  uva: 'Arinto',
+  pais: 'Portugal',
+  preco: 73.63,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/6020.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Monte Seco Branco',
+  descricao: 'Macio e fresco, sabor a fruta, jovem e fino.',
+  uva: 'Varietal',
+  pais: 'Portugal',
+  preco: 50.20,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/6234.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Duquesa Maria Superior',
+  descricao: 'Na boca, tem corpo mediano, aveludado, macio mas com imensa frescura.',
+  uva: 'Viognier',
+  pais: 'Portugal',
+  preco: 94.62,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/390.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Quinta do Morgado Branco',
+  descricao: 'Na boca, tem corpo mediano, aveludado, floral intenso',
+  uva: 'Isabel',
+  pais: 'Brasil',
+  preco: 56.62,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/1036.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Quinta do Morgado Rosado ',
+  descricao: 'Equilibrado, macio e doce',
+  uva: 'Niagara',
+  pais: 'Brasil',
+  preco: 56.62,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.ROSE,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/2426.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Quinta do Morgado Tinto ',
+  descricao: 'Equilibrado, doce, persistente.',
+  uva: 'Niagara',
+  pais: 'Brasil',
+  preco: 89.62,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/348.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Espumante Salton Brut',
+  descricao: 'Seu sabor é refrescante, com uma excelente acidez, enchendo o paladar com a sua cremosidade.',
+  uva: 'Chardonnay',
+  pais: 'Brasil',
+  preco: 90.62,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.ESPUMANTE,
+},
+
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/602.png?v=9-108834219', 
+  nomeDoProduto: 'Vinho Villard Chardonnay Reserva Expression',
+  descricao: 'Refrescante na boca, boa textura. Final suculento e mineral',
+  uva: 'Chardonnay',
+  pais: 'Chile',
+  preco: 114.21,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/45.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Epumante Prosecco Bedin Extra Dry ',
+  descricao: 'Cremoso e dissetante, com ótimo equilíbrio frescor-maciez.',
+  uva: 'Chardonnay',
+  pais: 'Itália',
+  preco: 127.91,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.ESPUMANTE,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/4684.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Espumante Salton Series Brut Rose',
+  descricao: 'Seu paladar é cremoso, de acidez refrescante e prolongada persistência',
+  uva: 'Merlot',
+  pais: 'Brasil',
+  preco: 98.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.ROSE,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/1356.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Noaillac Cru Bourgeois',
+  descricao: 'A estrutura gustativa mostra-se macia e acessível, com taninos bem fundidos ao conjunto, integrado frescor e bela persistência.',
+  uva: 'Petit Verdot',
+  pais: 'França',
+  preco: 150.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/6373.png?v=9-148096717', 
+  nomeDoProduto: 'Vinho Lourinho Frisante Rose',
+  descricao: 'Leve e fresco, com boa acidez. Presença marcada de CO2, boa persistência',
+  uva: 'Merlot',
+  pais: 'Portugal',
+  preco: 100.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.ROSE,
+},
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/6367.png?v=9-146078681', 
+  nomeDoProduto: 'Vinho Primevo Selection Branco ',
+  descricao: 'Paladar equilibrado, fresco, frutado e acídulo no final.',
+  uva: 'Arinto',
+  pais: 'Portugal',
+  preco: 79.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/34.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Paço Do Conde Herdade ',
+  descricao: 'Paladar equilibrado, fresco, frutado e acídulo no final.',
+  uva: 'Arinto',
+  pais: 'Portugal',
+  preco: 109.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/5891.png?v=9-101213491', 
+  nomeDoProduto: ' Vinho Chantel Verde DOC',
+  descricao: 'Volumoso, com boa acidez, refrescante e elegante, excelente vinho.',
+  uva: 'Loureiro',
+  pais: 'Portugal',
+  preco: 109.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.BRANCO,
+},
+
+{
+  imagem:'https://ingavinhos.agilecdn.com.br/6023.png?v=9-101213491', 
+  nomeDoProduto: 'Vinho Terras de Viriato Dão DOC Tinto ',
+  descricao: 'Macio e aveludado, com um bom equilíbrio entre o álcool e a acidez.',
+  uva: 'Jaen',
+  pais: 'Portugal',
+  preco: 189.11,
+  emPromocao: true,
+  desconto: 0.3, //0...1  
+  categoria: CategoriaProduto.TINTO,
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 getProdutos(): Produto[]{
