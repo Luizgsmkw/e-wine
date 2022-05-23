@@ -1,6 +1,6 @@
-<div class="container" style="margin-top: 40px ;">
+<h1>Feedback do Usuário</h1>
+<div class="container">
   <div class="row">
-
     <div class="col" style="margin-top: 30px ;">
       <ngb-carousel *ngIf="images">
         <ng-template ngbSlide>
@@ -8,7 +8,7 @@
             <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 100%;">
           </div>
           <div class="carousel-caption">
-            <h3 style=>As melhores promoções de vinho pertinho de você</h3>
+            <h4>Os melhores rórulos com os melhores preços</h4>
 
           </div>
         </ng-template>
@@ -17,18 +17,23 @@
             <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 100%;">
           </div>
           <div class="carousel-caption">
-            <h3 style=>Vinhos com até 50% de desconto!</h3>
+            <h4 style=>Vinhos com até 50% de desconto!</h4>
 
+          </div>
+        </ng-template>
+
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img class="foto" [src]="images[2]" alt="Random second slide" style="width: 100%;">
+          </div>
+          <div class="carousel-caption">
+            <h4>Frete grátis para todo Brasil!</h4>
           </div>
         </ng-template>
       </ngb-carousel>
     </div>
-
-
     <div class="col">
-
       <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" class="m-1">
-
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
           <input formControlName="nome" id="nome" type="text" class="form-control" />
@@ -65,13 +70,8 @@
             <span *ngIf="nota?.hasError('required')">O campo nota é preenchimento obrigatório!</span>
           </small>
         </div>
-
-        <button class="btn btn-primary" [disabled]="feedbackForm.invalid">Enviar</button>
-
+        <button class="botao" [disabled]="feedbackForm.invalid">Enviar</button>
       </form>
     </div>
-
-
-
   </div>
 </div>
