@@ -1,60 +1,59 @@
 <div class="container-home">
-  <ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="foto" [src]="images[0]" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="foto" [src]="images[1]" alt="Random second slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="foto" [src]="images[2]" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-  <footer>
-    <div class="container-informacoes">
-      <div class="contatos">
-        <h3>Contato</h3>
-        <ul>
-          <li>
-            Rua Cabral, 1578 – Bela Vista
-            São Paulo/SP – CEP 05593-970</li>
-          <li><i class="bi bi-envelope"></i> contato@ewine.com.br</li>
-          <li><i class="bi bi-whatsapp"></i>(12) 98180-3634</li>
-          <li><i class="bi bi-instagram"></i>@e-wine</li>
-        </ul>
-      </div>
-      <div class="minha-conta">
-        <h3>Minha conta</h3>
-        <ul>
-          <li>Minha conta</li>
-          <li>termos de uso</li>
-          <li>Politica de privacidade</li>
-        </ul>
-      </div>
-      <div class="cartoes">
-        <img src="../assets/Visa-icon.png" alt="">
-        <img class="card-master" src="../assets/Mastercard-icon-2.png" alt="">
-        <img src="../assets/Paypal-icon.png" alt="">
-      </div>
+  <div class="container-carousel">
+    <ngb-carousel *ngIf="imgs" class="carousel">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="foto" [src]="images[0]" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Nossos Valores</h3>
+          <p>a tradição, a elegância, a simplicidade e o requinte.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="foto" [src]="images[1]" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Nosso Objetivo</h3>
+          <p>Levar mais sabor para o seu dia a dia!</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="foto" [src]="images[2]" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Nosso diferencial</h3>
+          <p>Rótulos imponentes e cheios de autenticidade</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <section class="conteudo1">
+    <img src="http://www.adegaeemporiosinuelo.com.br/wp-content/uploads/2016/06/vinhos-licorosos-home.png" alt="">
+    <div class="conteudo1-sobre">
+        <h2>O Maior e-commerce de vinhos da América Latina</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel optio repudiandae similique libero quas consequuntur aperiam architecto rem nulla natus debitis expedita ducimus ad reiciendis velit, officia voluptas eveniet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat obcaecati eligendi quas amet exercitationem necessitatibus nesciunt suscipit nostrum labore voluptates animi non, iure libero blanditiis beatae, voluptate nihil cum odio.</p>
     </div>
-  </footer>
+ </section>
+
+ <section class="conteudo2">
+  <h3>Destaque da semana</h3>
+  <div class="vinhos">
+    <img src="https://www.wine.com.br/cdn-cgi/image/f=png,h=515,q=99/assets-images/produtos/19464-01.png" alt="">
+    <div class="vinhos-dados">
+        <h5>Château de Beaucastel Hommage à Jacques Perrin 2010</h5>
+        <span><i class="bi bi-star-fill"></i> 4</span>
+        <p>Potente, complexo, elegante, boa acidez, taninos presentes, amadeirado, final persistente</p>
+    </div>
+  </div>
+</section>
+<div class="imgVini">
+  <h2>Contrato com as melhores vinículas</h2>
+</div> 
+<div>
+  <div class="container-carousel">
+</div>
 </div>
     

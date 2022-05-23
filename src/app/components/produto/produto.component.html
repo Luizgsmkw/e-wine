@@ -14,9 +14,10 @@
             </h3>
           </div>
           <div [ngSwitch]="produto.categoria">
-            <span class="badge bg-success" *ngSwitchCase="'racao'">Ração</span>
-            <span class="badge bg-warning" *ngSwitchCase="'brinquedos'">Brinquedos</span>
-            <span class="badge bg-danger" *ngSwitchCase="'remedios'">Remédios</span>
+            <span class="badge bg-success" *ngSwitchCase="'tinto'">Tinto</span>
+            <span class="badge bg-warning" *ngSwitchCase="'branco'">Branco</span>
+            <span class="badge bg-danger" *ngSwitchCase="'rose'">Rose</span>
+            <span class="badge bg-danger" *ngSwitchCase="'espumante'">Espumante</span>
             <span class="badge bg-dark" *ngSwitchDefault>Outros</span>
           </div>
           <button (click)="onComprar()" class="btn btn-primary">Comprar</button>
