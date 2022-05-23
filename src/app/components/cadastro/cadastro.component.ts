@@ -7,7 +7,7 @@ import { AbstractControl, FormBuilder, ValidationErrors, Validators } from '@ang
 })
 export class CadastroComponent implements OnInit {
 
-  images = ['https://cdn.pixabay.com/photo/2015/04/25/03/09/cork-738603_960_720.jpg', 'https://cdn.pixabay.com/photo/2017/03/27/13/36/champagne-2178775_960_720.jpg', 'https://cdn.pixabay.com/photo/2017/06/27/14/37/wines-2447514_960_720.jpg'];
+  images = ['https://sgw.bacanudo.com/storage/conteudo/1/4155/20200820112918_5f3e88be9a150.jpg ', 'http://www.nidelins.com.br/wp-content/uploads/2016/04/bon-vin2.jpg'];
 
   constructor(private fb: FormBuilder) { }
 
@@ -15,7 +15,8 @@ export class CadastroComponent implements OnInit {
     nome: ['', [Validators.required, Validators.minLength(5)]], 
     email: ['', [Validators.required, Validators.email]], //igual
     endereco: ['', [Validators.required, Validators.maxLength(50)]], 
-    senha: ['', [Validators.required, Validators.minLength(8)]], 
+    senha: ['', [Validators.required, Validators.minLength(8)]],
+    
   });
 
   get nome(){
@@ -30,6 +31,7 @@ export class CadastroComponent implements OnInit {
   get senha(){
     return this.cadastroForm.get('senha');
   }
+
 
   onSubmit(){
     alert('Cadastro realizado com sucesso! Seja bem-vindo(a)!');
