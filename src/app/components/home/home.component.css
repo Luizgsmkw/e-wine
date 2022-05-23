@@ -8,10 +8,143 @@
   height: 900px;
 }
 
+.container-carousel {
+  background-color: #2A2A2A;
+}
+
+.carousel-caption h3{
+  font-family: 'glamor';
+}
+
+.carousel-caption p {
+  padding-bottom: 35px;
+}
+/* .carousel {
+  width: 100px;
+  margin: auto;
+} */
+
 .foto{
   width: 100%;
-  height: 700px;
+  height: 550px;
 }
+
+.conteudo1 {
+  padding-top: 50px;
+  background-color: #87212E;
+  background-color: #CDCAB7;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteudo1 img {
+  height: 520px;
+  padding-left: 20px;
+}
+.conteudo1-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.conteudo1-sobre h2 {
+  font-family: 'glamor';
+  font-weight: bolder;
+  color: black; 
+}
+
+.conteudo1-sobre p {
+  color: #6A6A6A;
+} 
+
+.conteudo2 {
+  padding-top: 50px;
+  background-color: #87212E;
+  background-image: url(https://cdn.pixabay.com/photo/2012/04/18/21/32/grapes-37947_960_720.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+
+.conteudo2 h3 {
+  padding-top: 50px;
+  font-family: 'glamor';
+  font-weight: bolder;
+  font-size: 2em;
+  color: black; 
+  padding-left: 100px;
+}
+
+.vinhos {
+  background-color: white;
+  background-color: #2C2C2C;
+  display: flex;
+  justify-content: end;
+  width: 700px;
+  margin-left: 60px;
+  border-radius: 30px 0px 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: white;
+}
+
+.vinhos-dados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.vinhos img {
+  height: 300px;
+}
+
+.imgVini {
+  background-image: url(https://www.visiteosusa.com.br/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/HERO%201_Sonoma_CA_stock-photo-vineyard-morning-mist-4247355._72%20DPI.jpg?itok=WczZqueN);
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgVini h2 {
+  color: rgba(255, 255, 255, 0.795);
+  font-family: 'glamor';
+  font-size: 3em;
+}
+
+.imgVini p {
+  color: rgba(255, 255, 255, 0.795);
+  font-family: 'glamor';
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container-informacoes {
   height: 400px;

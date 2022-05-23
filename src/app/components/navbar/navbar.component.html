@@ -7,13 +7,13 @@
 
   <nav>
     <ul>
+      <li><a [routerLink]="'/produtos'" (click)="isMenuCollapsed = true">Produtos</a></li>
       <li><a [routerLink]="'/cadastro'" (click)="isMenuCollapsed = true">Cadastro</a></li>
       <li><a [routerLink]="'/feedback'" (click)="isMenuCollapsed = true">Feedback</a></li>
-      <li><a [routerLink]="'/produtos'" (click)="isMenuCollapsed = true">Produtos</a></li>
       <li><a [routerLink]="'/colaborador'" (click)="isMenuCollapsed = true">Área do Colaborador</a></li>
-      <li><a [routerLink]="'/novo-produto'" (click)="isMenuCollapsed = true">Cadastrar Novo Produto</a></li>
+      <!-- <li><a [routerLink]="'/novo-produto'" (click)="isMenuCollapsed = true">Cadastrar Novo Produto</a></li> -->
       <li class="login"><a [routerLink]="'/login'" (click)="isMenuCollapsed = true"><img src="../assets/login1.png" alt=""></a></li>
+      <li class="carrinho"><img src="../assets/basket3.png" alt=""></li>
     </ul>
   </nav>
-
 </div>

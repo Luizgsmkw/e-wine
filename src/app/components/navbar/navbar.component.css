@@ -12,7 +12,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f3ebdf;
+   background-color: #f3ebdf; 
+  
 }
 
 .logo {
@@ -36,7 +37,7 @@
 .logo img {
   height: 40px;
   padding-right: 10px;
-}
+} 
 
 nav {
   width: 50vw;
@@ -62,6 +63,12 @@ nav ul {
   border-radius: 50%;
 }
 
+.carrinho img {
+  height: 40px;
+  padding: 3px;
+  border: solid 1px black;
+  border-radius: 50%;
+}
 
 
 
