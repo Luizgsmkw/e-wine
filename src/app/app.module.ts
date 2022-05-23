@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,7 +15,14 @@ import { ProdutoComponent } from './components/produto/produto.component';
 import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
 import { ColaboradorComponent } from './components/colaborador/colaborador.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import localePt from "@angular/common/locales/pt";
+import { registerLocaleData } from '@angular/common';
+import { LOCALE_ID } from '@angular/core';
+import { IndicacoesDeVinhosComponent } from './components/indicacoes-de-vinhos/indicacoes-de-vinhos.component';
 
+
+registerLocaleData(localePt);
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ProdutoComponent,
     NovoProdutoComponent,
     ColaboradorComponent,
-    FooterComponent
+    FooterComponent,
+    IndicacoesDeVinhosComponent
   ],
   imports: [
     BrowserModule,
@@ -38,10 +45,12 @@ import { FooterComponent } from './components/footer/footer.component';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    HttpClientModule,
    
   ],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: 'pt'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

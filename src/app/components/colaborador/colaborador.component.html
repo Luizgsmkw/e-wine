@@ -1,29 +1,29 @@
 <body class="backgroundimagem">
-<h1 class="titulo"> Área do Colaborador</h1>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1" id="m-1"> 
-  <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input formControlName="email" id="email" type="text" class="form-control" />
-    <small class="text-danger" *ngIf="email?.touched && email?.invalid">
-      <span *ngIf="email?.hasError('required')">O email é obrigatório!</span>
-      <span *ngIf="email?.hasError('email')">Formato de email invalido!</span>
-    </small>
-    <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
-  </div>
+  <h1 class="titulo"> Área do Colaborador</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1" id="m-1">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input formControlName="email" id="email" type="text" class="form-control" />
+      <small class="text-danger" *ngIf="email?.touched && email?.invalid">
+        <span *ngIf="email?.hasError('required')">O email é obrigatório!</span>
+        <span *ngIf="email?.hasError('email')">Formato de email invalido!</span>
+      </small>
+      <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
+    </div>
 
-  <div class="mb-3">
-    <label for="senha" class="form-label">Senha</label>
-    <input formControlName="senha" id="senha" type="password" class="form-control" />
-    <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
-      <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
+    <div class="mb-3">
+      <label for="senha" class="form-label">Senha</label>
+      <input formControlName="senha" id="senha" type="password" class="form-control" />
+      <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
+        <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
 
-    </small>
-  </div>
-  <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
-</form>
-<button id="btn-sm" class="btn btn-primary btn-sm" hidden>
-  <a [routerLink]="'/novo-produto'" class="href-sm">Novo Produto</a>
-</button>
+      </small>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+  </form>
+  <button id="btn-sm" class="btn btn-primary btn-sm" hidden>
+    <a [routerLink]="'/novo-produto'" class="href-sm">Novo Produto</a>
+  </button>
 
 </body>
 

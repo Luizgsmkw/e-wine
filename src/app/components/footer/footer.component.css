@@ -16,8 +16,7 @@ text-decoration: none;
 color: white;
 }
 footer {
-  position: fixed;  
-  bottom: 0;
+ 
   width: 100%;
   justify-content: flex-end;
   

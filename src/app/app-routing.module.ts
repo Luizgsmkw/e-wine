@@ -4,6 +4,7 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { ColaboradorComponent } from './components/colaborador/colaborador.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
+import { IndicacoesDeVinhosComponent } from './components/indicacoes-de-vinhos/indicacoes-de-vinhos.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
 {path: 'produtos', component: ProdutosComponent},
 {path:'colaborador', component: ColaboradorComponent},
 {path: 'novo-produto', component: NovoProdutoComponent}, 
+{path:'indicacoes-de-vinhos', component: IndicacoesDeVinhosComponent },
 {path: '**', component: NotFoundComponent}
 ];
 
