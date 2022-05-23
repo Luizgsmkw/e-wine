@@ -15,6 +15,7 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ProdutoComponent } from './components/produto/produto.component';
 import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
 import { ColaboradorComponent } from './components/colaborador/colaborador.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ColaboradorComponent } from './components/colaborador/colaborador.compo
     ProdutosComponent,
     ProdutoComponent,
     NovoProdutoComponent,
-    ColaboradorComponent
+    ColaboradorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
