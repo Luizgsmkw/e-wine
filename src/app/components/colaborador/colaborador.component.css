@@ -1,6 +1,52 @@
+.backgroundimagem{
+  background-image: url(imagem.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 45%;
+  margin-top: -100px;
+
+}
+
 .titulo{
-  margin-top: 30px;
+  margin-top: 120px;
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
+  color:#51332e;
+}
+
+.form-control{
+  font-size: 20px;
+  width: 35%;
+  text-align: center;
+  border-color: black;
+}
+
+.mb-3{
+  align-items: center;
+  margin-left: 40%;
+}
+
+.form-label{
+  margin-left: 15%;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.btn-primary{
+  margin-left: 41.5%;
+  width: 18%;
+  border-radius: 25px;
+}
+
+.href-sm{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
 }
