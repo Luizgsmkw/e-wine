@@ -1,22 +1,31 @@
+<h1 class="titulo"> Login Usuário</h1>
 <div class="container">
   <div class="row">
     <div class="col">
 
-      <form #loginForm="ngForm" class="m-1" (onSubmit)="onSubmit()">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1">
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input #emailInp="ngModel" [(ngModel)]="email" id="email" name="email" type="email" class="form-control" placeholder="Seu email" required />
-          <small *ngIf="emailInp.touched && emailInp.invalid" class="text-danger">Campo inválido</small>
+          <label for="login" class="form-label">Login</label>
+          <input formControlName="login" id="login" type="text" class="form-control" />
+          <small class="text-danger" *ngIf="login?.touched && login?.invalid">
+            <span *ngIf="login?.hasError('required')">O nome é obrigatório!</span>
+            <span *ngIf="login?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
+          </small>
+          <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
         </div>
 
         <div class="mb-3">
           <label for="senha" class="form-label">Senha</label>
-          <input #senhaInp="ngModel" [(ngModel)]="senha" id="senha" name="senha" type="password" class="form-control" placeholder="Sua senha" required />
-          <small *ngIf="senhaInp.touched && senhaInp.invalid" class="text-danger">Campo inválido</small>
+          <input formControlName="senha" id="senha" type="password" class="form-control"  />
+          <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
+            <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
+            <span *ngIf="senha?.hasError('minlength')">O mínimo são 8 caracteres!!</span>
+          </small>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
-
+        
+        <button class="botao" type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Entrar</button>
       </form>
+      
     </div>
 
     <div class="col" style="margin-top: 30px ;">
