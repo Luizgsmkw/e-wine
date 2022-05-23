@@ -10,19 +10,22 @@ export class ColaboradorComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   loginForm= this.fb.group({
-  nome: ['', [Validators.required, Validators.minLength(5)]], //começa vazio, e cria validador
+  senha: ['', [Validators.required]], //começa vazio, e cria validador
   email: ['', [Validators.required, Validators.email]],
 });
 //utiliza o get para que não seja necessário utilizar lá na frente, no ngIg um linha grande p pegar ficou só: *ngIf="nome?.touched && nome?.invalid"
-  get nome(){
-    return this.loginForm.get('nome');
+  get senha(){
+    return this.loginForm.get('senha');
   }
   get email(){
     return this.loginForm.get('email');
   }
   onSubmit(){
     alert(`Seja bem-vindo! Colaborador Logado`);
+    (<HTMLInputElement> document.getElementById("m-1")).setAttribute("hidden", "true");
+    (<HTMLInputElement> document.getElementById("btn-sm")).removeAttribute("hidden");
   }
+  
 
  
 
