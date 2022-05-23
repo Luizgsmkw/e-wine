@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class FeedbackComponent implements OnInit {
   
-  images = ['https://cdn.create.vista.com/api/media/medium/213224428/stock-photo-bottles-glass-red-wine-fruits?token=', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH__2Uglg28GqxwUkmzO0ovbOk9LvEZGnwuw&usqp=CAU'];
+  images = ['https://cdn.create.vista.com/api/media/medium/213224428/stock-photo-bottles-glass-red-wine-fruits?token=', 'https://cdn.create.vista.com/api/media/small/213224258/stock-photo-close-view-bottle-wine-blank', 'https://cdn.create.vista.com/api/media/medium/213223836/stock-photo-glass-bottle-barrel-wine-cheese?token='];
 
   constructor(private fb: FormBuilder) { }
 

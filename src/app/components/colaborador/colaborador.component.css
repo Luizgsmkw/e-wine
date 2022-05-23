@@ -12,7 +12,7 @@
   margin-left: 30px;
   margin-bottom: 50px;
   text-align: center;
-  color:#51332e;
+  color:rgb(199,143,61);
 }
 
 .form-control{
@@ -34,9 +34,13 @@
 }
 
 .btn-primary{
-  margin-left: 41.5%;
-  width: 18%;
-  border-radius: 25px;
+  margin-left: 46.5%;
+ border: rgb(199, 143, 61);
+  background-color:rgb(199, 143, 61)  ;
+  border-radius: 4px;
+  width: 120px;
+  height: 50px;
+ color: white;
 }
 
 .href-sm{
