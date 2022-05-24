@@ -1,11 +1,12 @@
 
-.botao{
+.btn-primary{
   background-color:rgb(199, 143, 61)  ;
   border-radius: 4px;
   width: 120px;
   height: 50px;
   justify-content: center;
   color: white;
+  border:rgb(199, 143, 61)  ;
   
 
 }
