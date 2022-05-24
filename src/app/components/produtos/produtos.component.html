@@ -1,5 +1,35 @@
-<h1>Vinhos</h1>
-<hr /><br><br>
+
+<div class="container-carousel">
+  <ngb-carousel *ngIf="images"class="carousel">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="foto" [src]="images[0]" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Nossos Valores</h3>
+        <p>a tradição, a elegância, a simplicidade e o requinte.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="foto" [src]="images[1]" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Nosso Objetivo</h3>
+        <p>Levar mais sabor para o seu dia a dia!</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="foto" [src]="images[2]" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Nosso diferencial</h3>
+        <p>Rótulos imponentes e cheios de autenticidade</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
 <div class="mx-1">
 
   <p>Produto no carrinho:

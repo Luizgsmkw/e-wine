@@ -8,6 +8,7 @@ import { ProdutosService } from 'src/app/shared/services/produtos/produtos.servi
 })
 export class ProdutosComponent implements OnInit {
 
+  images = ['https://static.paodeacucar.com/static/pa/1639430071775-mob-2021-01-16-exclusivos-mobile-2.jpg?im=Resize,width=599', 'https://startupi.com.br/wp-content/uploads/2020/09/wine-ipo-1.jpg', 'https://p2.trrsf.com/image/fget/cf/1200/675/middle/images.terra.com/2022/03/24/10vinhos-sopq4yoe5h0m.299_1190x330_03_15'];
 
   constructor(private produtosService: ProdutosService) { }
   produtos: Produto[] = [];

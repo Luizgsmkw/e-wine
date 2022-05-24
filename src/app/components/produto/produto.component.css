@@ -1,0 +1,79 @@
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-produtos {
+    display: flex;
+    background-color: #CDCAB7;
+    justify-content: space-between;
+    width: 450px;
+    height: 150px;
+    border-radius: 20px;
+    color: #2C2C2C;
+    margin-left: 50px;
+    font-family: 'glamor';
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 50px;
+}
+
+.vinho-promo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nome {
+    text-align: justify;
+}
+.produtos-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 60px;
+}
+
+.produtos-tipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -5px;
+
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preco-h31 {
+    text-decoration: line-through;
+}
+.preco-h32 {
+    margin-top: -10px;
+    color: #87212E;
+}
+
+.img-vinho {
+    height: 125px;
+    width: 65px;
+    margin-left: 0px;
+}
+
+.img-taca {
+    height: 30px;
+    width: 30px;
+}
+
+.img-tacaEs {
+    height: 50px;
+    width: 50px;
+}
+
+.butao {
+    width: 100px;
+    background-color: #b62b3d;
+    border: #87212E;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
