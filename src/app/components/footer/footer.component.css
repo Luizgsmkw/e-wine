@@ -4,6 +4,7 @@
   padding: 0;
   color: rgb(135, 33, 46);
   font-family: Roboto;
+
 }
 .mb-0{
   color: white;
@@ -23,7 +24,7 @@ footer {
   }
 .container-informacoes {
   height: 400px;
-  background-color: #CDCAB7;
+  background-color: #f3ebdf; 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
