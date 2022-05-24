@@ -10,10 +10,12 @@ import { TemperaturaService, timezone } from 'src/app/shared/services/temperatur
   styleUrls: ['./indicacoes-de-vinhos.component.css']
 })
 export class IndicacoesDeVinhosComponent implements OnInit {
+  image0 = 'https://vinholando.com/wp-content/uploads/2021/12/Capa-12-1000x619.png.webp';
 image1 = 'https://vinholando.com/wp-content/uploads/2021/12/3-8.png.webp';
 image2 = 'https://vinholando.com/wp-content/uploads/2021/12/2-10.png.webp';
-image3='https://vinholando.com/wp-content/uploads/2021/12/4-7.png.webp';
-image4='https://vinholando.com/wp-content/uploads/2021/12/1-11.png.webp';
+image3='https://vinholando.com/wp-content/uploads/2022/01/denominacao_de_origem_controlada.jpg.webp';
+image4='https://vinholando.com/wp-content/uploads/2022/01/vinho_estragado.png.webp';
+image5='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCGFkmcn2gP76dVq0XReEHX9ZN9B5XNz3Mg&usqp=CAU';
 
   constructor(
     private localizacaoService: LocalizacaoService,

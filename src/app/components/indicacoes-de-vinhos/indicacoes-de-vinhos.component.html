@@ -1,32 +1,22 @@
-<div class="container">
-  <p class="text-muted" style="text-align: right;">Confira aqui a temperatura do seu local e descubra o melhor para degustar ainda hoje</p>
-  <div *ngIf="temperatura$ | async as clima; else loading">
-    <p class="text-muted" style="text-align: right;"> Temperatura atual: {{clima.main.temp}} °C</p>
-    <p class="text-muted" style="text-align: right;"> Localização atual: {{clima.name}}</p>
-  </div>
-
-  <ng-template #loading>
-    <div class="spinner-border">
-    </div>
-  </ng-template>
-
-  <p *ngIf="error" class="text-danger">Um erro ocorreu.</p>
-</div>
-
-<div class="container" style="width:1000px ;">
+<div class="container" style="width:1000px; margin-bottom: 50px; margin-top: 100px;">
   <h1>Um vinho para cada temperatura: confira as dicas</h1>
+  <br><br>
+  <div class="imagens">
+    <img class="foto-vinho" [src]="image0" alt="foto0" style="width: 100%;">
+  </div>
   <br><br>
   <p>
     Quem disse que vinho é uma bebida que deve ser consumida somente nos dias frios? Já pensou em ter um vinho para cada estação do ano?<br>
 
     A verdade é que o vinho é uma bebida democrática, que atende os mais diversos paladares, combina com diferentes pratos e vai bem em qualquer ocasião.<br>
 
-    Embora no Brasil a bebida seja mais consumida no frio, há um vinho para cada estação, ou melhor, para cada clima em que você desejar degustar uma tacinha.<br>
+    Embora no Brasil a bebida seja mais consumida no frio, há um vinho para cada estação, ou melhor, para cada clima em que você desejar degustar uma tacinha.<br><br>
 
-    Quer saber como aproveitar melhor a bebida em todas as estações? Acompanhe!</p><br>
+    <strong> Quer saber como aproveitar melhor a bebida em todas as estações?<br> Acompanhe nossas dicas! Aproveite e já veja a temperatura da sua cidade e escolha o vinho que mais combina!</strong>
+  </p><br>
 
   <h2>Vinhos para dias mais quentes</h2>
-  <p> Nas estações mais quentes do ano também é possível apreciar um bom vinho. </p>
+  <p> Nas estações mais quentes do ano também é possível apreciar um bom vinho. </p><br>
   <h3>Primavera</h3>
   <p>Os dias mais quentes, em países tropicais como o Brasil, pedem, automaticamente, bebidas mais leves, como é o caso dos vinhos jovens.</p>
 
@@ -36,7 +26,7 @@
   <br><br>
   <p>Vinhos jovens são os espumantes, rosés e brancos leves. Esses vinhos são reconhecidos pelo frescor, pela cor e, algumas vezes, pela doçura na medida certa.<br>
 
-    Os vinhos de primavera podem harmonizar muito bem com pratos também leves como saladas, peixes, frutos-do-mar e algumas massas.</p><br><br>
+    Os vinhos de primavera podem harmonizar muito bem com pratos também leves como saladas, peixes, frutos-do-mar e algumas massas.</p><br>
 
   <h3>Verão</h3>
   <p>Os vinhos de verão podem ser, basicamente, os mesmos consumidos na primavera.</p>
@@ -50,15 +40,16 @@
     Quem procura um vinho para cada estação já pode anotar na lista de primavera-verão essas dicas:<br>
 
   <ul>
-    <li> Sauvignon Blanc: um vinho branco, que mistura leveza, frescor e o sabor frutado;</li>
-    <li>Rosé de Provence: produzido na região onde são feitos 80% dos vinhos rosés do mundo. São vinhos leves e frescos;</li>
-    <li>Pinot Grigio: uma das principais uvas-brancas apresenta vinhos com notas de pêssego e aromas cítricos.</li>
+    <li> <strong>Sauvignon Blanc:</strong>um vinho branco, que mistura leveza, frescor e o sabor frutado;</li>
+    <li><strong>Rosé de Provence: </strong>produzido na região onde são feitos 80% dos vinhos rosés do mundo. São vinhos leves e frescos;</li>
+    <li><strong>Pinot Grigio: </strong>uma das principais uvas-brancas apresenta vinhos com notas de pêssego e aromas cítricos.</li>
   </ul>
   <p>E, porque não, incluir na lista de um vinho para cada estação, um tinto? O Pinot Noir e o Chianti podem ser muito bem-vindos nos dias mais quentes, pois também são vinhos leves, aromáticos e macios.
   </p><br><br>
 
   <h2>Vinhos para dias mais frios</h2>
   <p> À medida que o frio vai se aproximando, as vendas dos vinhos tintos começam a disparar novamente no país. E não é por acaso: eles caem ainda melhor nessa época.</p>
+  <br>
   <h3>Outono</h3>
   <p>Harmonizações com pratos mais intensos, como massas e carnes, são mais escolhidos nessas épocas. Dessa forma, os vinhos tintos costumam acompanhar melhor essa escolha.</p><br>
   <div class="imagens">
@@ -74,9 +65,38 @@
   <br><br>
   <p>Com os dias ainda mais gelados, você pode começar a apostar em opções mais encorpadas, como os tradicionais:</p>
   <ul>
-    <li>Cabernet Sauvignon: um tipo de uva derivada da mistura da Cabernet Franc e Sauvignon Blanc, que tem alta acidez e cor rubi. Portanto, seu sabor é bem robusto e característico, fazendo combinação perfeita com os pratos quentes do inverno, tipo risoto ou carnes com molho;</li>
-    <li>Malbec: são de cor mais escura e, em grande parte das vezes, envelhecidos em barris de carvalho, o que deixa seu sabor ainda mais intenso, harmonizando bem com carnes gordurosas;</li>
-    <li>Syrah: bem escuro e com sabor complexo e acidez moderada. O vinho para inverno com uvas Syrah faz harmonização perfeita com pratos mais apimentados e queijos fortes.</li>
+    <li><strong>Cabernet Sauvignon: </strong>um tipo de uva derivada da mistura da Cabernet Franc e Sauvignon Blanc, que tem alta acidez e cor rubi. Portanto, seu sabor é bem robusto e característico, fazendo combinação perfeita com os pratos quentes do inverno, tipo risoto ou carnes com molho;</li>
+    <li><strong>Malbec: </strong>são de cor mais escura e, em grande parte das vezes, envelhecidos em barris de carvalho, o que deixa seu sabor ainda mais intenso, harmonizando bem com carnes gordurosas;</li>
+    <li><strong>Syrah:</strong> bem escuro e com sabor complexo e acidez moderada. O vinho para inverno com uvas Syrah faz harmonização perfeita com pratos mais apimentados e queijos fortes.</li>
+  </ul><br><br>
+  <p class="temp" style="text-align: center;"><strong>Agora que já sabe quais são os melhores vinhos para degustar em cada estação, confira a tempartura da sua cidade e já peça nossos vinhos direto em sua residência. </strong><br>
+    <a [routerLink]="'/produtos'" class="href-sm"> Fazer Pedido!</a>
+  </p>
+</div>
 
-  </ul>
+<div class="container">
+  <p class="text-muted" style="text-align: center; ">Confira aqui a temperatura do seu local</p>
+  <div class="row">
+    <div class="col-sm">
+
+      <div *ngIf="temperatura$ | async as clima; else loading">
+        <p class="text-muted" style="text-align: right;"> Temperatura atual: {{clima.main.temp}} °C</p>
+        <p class="text-muted" style="text-align: right;"> Localização atual: {{clima.name}}</p>
+      </div>
+
+      <ng-template #loading>
+        <div class="spinner-border">
+        </div>
+      </ng-template>
+
+      <p *ngIf="error" class="text-danger">Um erro ocorreu.</p>
+    </div>
+    <div class="col-sm" style="margin-bottom: 100px;">
+      <div class="imagens">
+        <img class="foto-temperatura" [src]="image5" alt="foto4" style="width: 50%;">
+      </div>
+    </div>
+
+  </div>
+
 </div>

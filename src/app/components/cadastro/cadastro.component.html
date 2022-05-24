@@ -42,25 +42,17 @@
 
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="maior de idade">
-          <label class="form-check-label" for="maior de idade">Declaro que tenho mais de 18 anos </label>
+          <label class="form-check-label" for="maior de idade" style="font-size: small; margin-bottom: 10px;">Declaro que tenho mais de 18 anos </label>
         </div>
-
-
 
         <button class="btn btn-primary" [disabled]="cadastroForm.invalid">Cadastrar</button>
       </form>
-
-
     </div>
-
-
-
-
     <div class="col" style="margin-top: 30px ;">
       <ngb-carousel *ngIf="images">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 100%;">
+            <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 110%;">
           </div>
           <div class="carousel-caption">
             <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
@@ -69,7 +61,7 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 100%;">
+            <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 110%;">
           </div>
           <div class="carousel-caption">
             <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
