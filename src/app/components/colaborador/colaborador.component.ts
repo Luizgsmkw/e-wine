@@ -1,17 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, ValidationErrors, Validators } from '@angular/forms';
 
+
+function colaborador(control: AbstractControl): ValidationErrors | null {
+  if(Validators.email(control) === null && Validators.required(control) === null){
+    if(!control.value.includes("colaborador@ewine.com")) {
+      return {colaborador: true};
+    }
+  }
+  return null;
+} 
+function senha(control: AbstractControl): ValidationErrors | null {
+  if(Validators.required(control) === null && Validators.required(control) === null){
+    if(!control.value.includes(1234)) {
+      return {senha: true};
+    }
+  }
+  return null;
+} 
+
 @Component({
   selector: 'app-colaborador',
   templateUrl: './colaborador.component.html',
   styleUrls: ['./colaborador.component.css']
 })
+
 export class ColaboradorComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   loginForm= this.fb.group({
-  senha: ['', [Validators.required]], //começa vazio, e cria validador
-  email: ['', [Validators.required, Validators.email]],
+  senha: ['', [Validators.required, senha]], //começa vazio, e cria validador
+  email: ['', [Validators.required, Validators.email, colaborador]],
 });
 //utiliza o get para que não seja necessário utilizar lá na frente, no ngIg um linha grande p pegar ficou só: *ngIf="nome?.touched && nome?.invalid"
   get senha(){

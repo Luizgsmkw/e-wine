@@ -1,6 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, ValidationErrors, Validators } from '@angular/forms';
 
+function login(control: AbstractControl): ValidationErrors | null {
+  if(Validators.email(control) === null && Validators.required(control) === null){
+    if(!control.value.includes("login@ewine.com")) {
+      return {login: true};
+    }
+  }
+  return null;
+} 
+function senha(control: AbstractControl): ValidationErrors | null {
+  if(Validators.required(control) === null && Validators.required(control) === null){
+    if(!control.value.includes(1234)) {
+      return {senha: true};
+    }
+  }
+  return null;
+} 
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,8 +29,8 @@ OnInit {
 constructor(private fb: FormBuilder) { }
 
   loginForm= this.fb.group({
-  login: ['', [Validators.required, Validators.minLength(5)]], //começa vazio, e cria validador
-  senha:['', [Validators.required, Validators.minLength(8)]]
+  login: ['', [Validators.required, Validators.email, login]], //começa vazio, e cria validador
+  senha:['', [Validators.required, Validators.minLength(3), senha]]
 });
 //utiliza o get para que não seja necessário utilizar lá na frente, no ngIg um linha grande p pegar ficou só: *ngIf="nome?.touched && nome?.invalid"
   get login(){

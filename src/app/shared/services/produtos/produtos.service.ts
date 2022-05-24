@@ -21,7 +21,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/3955.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Brado Branco - Adega de Borba',
+  nomeDoProduto: 'Vinho Brado Branco',
   descricao: 'Vinho branco, de Portugal da região do Alentejo, premiado, de cor citrina com nuance esverdeada. Na boca apresenta sabor macio, equilibrado, com sensação persistente de frescura no final da prova. Aroma com boa intensidade aromática frutada e floral.',
   uva: 'Fernão Pires, Roupeiro, Tamarez',
   pais: 'Portugal',
@@ -33,7 +33,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/5320.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Brado Rosado - Adega de Borba',
+  nomeDoProduto: 'Vinho Brado Rosado',
   descricao: 'Vinho de cor salmão brilhante, com uma excelente frescura aromática, onde se destacam cativantes notas de frutos silvestres do Douro, em perfeita sintonia com elegantes notas florais.',
   uva: 'Trincadeira, Aragonez, Castelão',
   pais: 'Portugal',
@@ -46,7 +46,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/6177.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Espumante La Linda Brut',
+  nomeDoProduto: 'Espumante La Linda Brut',
   descricao: 'Coloração limão, brilhante, perlage fino. Paladar leve, com acidez viva que aporta frescor, conjunto seco, porém macio, e final equilibrado, agradável. Expressivo e refinado ao nariz, com frutas brancas frescas, maçã, pêra, notas florais e de mel.',
   uva: 'Chardonnay',
   pais: 'Argentina',
@@ -141,7 +141,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/2007.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Herdade Das Albernoas Branco ',
+  nomeDoProduto: 'Vinho Herdade Das Albernoas ',
   descricao: 'No paladar é leve e fresco com bom equilibrio e agradável acidez',
   uva: 'Arinto',
   pais: 'Portugal',
@@ -214,7 +214,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/348.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Espumante Salton Brut',
+  nomeDoProduto: 'Espumante Salton Brut',
   descricao: 'Seu sabor é refrescante, com uma excelente acidez, enchendo o paladar com a sua cremosidade.',
   uva: 'Chardonnay',
   pais: 'Brasil',
@@ -227,7 +227,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/602.png?v=9-108834219', 
-  nomeDoProduto: 'Vinho Villard Chardonnay Reserva Expression',
+  nomeDoProduto: 'Vinho Villard Chardonnay Reserva',
   descricao: 'Refrescante na boca, boa textura. Final suculento e mineral',
   uva: 'Chardonnay',
   pais: 'Chile',
@@ -239,7 +239,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/45.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Epumante Prosecco Bedin Extra Dry ',
+  nomeDoProduto: 'Epumante Prosecco Bedin',
   descricao: 'Cremoso e dissetante, com ótimo equilíbrio frescor-maciez.',
   uva: 'Chardonnay',
   pais: 'Itália',
@@ -251,14 +251,14 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/4684.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Espumante Salton Series Brut Rose',
+  nomeDoProduto: 'Espumante Salton Series Brut Rose',
   descricao: 'Seu paladar é cremoso, de acidez refrescante e prolongada persistência',
   uva: 'Merlot',
   pais: 'Brasil',
   preco: 98.11,
   emPromocao: true,
   desconto: 0.3, //0...1  
-  categoria: CategoriaProduto.ROSE,
+  categoria: CategoriaProduto.ESPUMANTE,
 },
 
 {
@@ -322,7 +322,7 @@ private produtos: Produto[] = [
 
 {
   imagem:'https://ingavinhos.agilecdn.com.br/6023.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Terras de Viriato Dão DOC Tinto ',
+  nomeDoProduto: 'Vinho Terras de Viriato Dão DOC',
   descricao: 'Macio e aveludado, com um bom equilíbrio entre o álcool e a acidez.',
   uva: 'Jaen',
   pais: 'Portugal',
