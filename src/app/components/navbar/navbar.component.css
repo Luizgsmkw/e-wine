@@ -45,8 +45,9 @@ nav {
 
 a {
 text-decoration: none;
-color: black;
-font-family: "Roboto", sans-serif;
+color: rgb(135, 33, 46);
+font-size: bolder;
+font-family: 'Grape Nuts', cursive;
 }
 
 nav ul {

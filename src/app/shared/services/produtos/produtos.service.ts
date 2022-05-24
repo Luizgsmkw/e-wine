@@ -320,33 +320,6 @@ private produtos: Produto[] = [
   categoria: CategoriaProduto.BRANCO,
 },
 
-{
-  imagem:'https://ingavinhos.agilecdn.com.br/6023.png?v=9-101213491', 
-  nomeDoProduto: 'Vinho Terras de Viriato Dão DOC',
-  descricao: 'Macio e aveludado, com um bom equilíbrio entre o álcool e a acidez.',
-  uva: 'Jaen',
-  pais: 'Portugal',
-  preco: 189.11,
-  emPromocao: true,
-  desconto: 0.3, //0...1  
-  categoria: CategoriaProduto.TINTO,
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 getProdutos(): Produto[]{

@@ -1,6 +1,10 @@
+<div class="container" style="text-align: right; margin-top: 20px;">
+  <li class="carrinho list-unstyled "><img src="../assets/basket3.png" alt=""></li>
+  <span class="bdge bg-light" style="color:rgb(135, 33, 46)"><strong>Carrinho:</strong>{{carrinho.length}}</span>
+</div>
 
-<div class="container-carousel">
-  <ngb-carousel *ngIf="images"class="carousel">
+<div class="container-carousel" style="margin-top:50px; margin-bottom: 50px;">
+  <ngb-carousel *ngIf="images" class="carousel">
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img class="foto" [src]="images[0]" alt="Random first slide">
@@ -31,10 +35,6 @@
   </ngb-carousel>
 </div>
 <div class="mx-1">
-
-  <p>Produto no carrinho:
-    <span class="bdge bg-primary">{{carrinho.length}}</span>
-  </p>
   <div class="container">
     <div class="row">
       <div class="col" *ngFor="let produto of produtos">

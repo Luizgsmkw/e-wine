@@ -40,11 +40,19 @@
           </small>
         </div>
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="maior de idade">
-          <label class="form-check-label" for="maior de idade" style="font-size: small; margin-bottom: 10px;">Declaro que tenho mais de 18 anos </label>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="maior de idade">
+                <label class="form-check-label" for="maior de idade" style="font-size: small; ">Declaro que tenho mais de 18 anos </label>
+              </div>
+            </div>
+            <div class="col-sm">
+              <p style="font-size: small; ">Já é cadastrado? <a [routerLink]="'/login'" class=" href-sm">Faça seu login</a></p>
+            </div>
+          </div>
         </div>
-
         <button class="btn btn-primary" [disabled]="cadastroForm.invalid">Cadastrar</button>
       </form>
     </div>
