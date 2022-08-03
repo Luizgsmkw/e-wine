@@ -8,7 +8,7 @@ import { ProdutosService } from 'src/app/shared/services/produtos/produtos.servi
 })
 export class ProdutosComponent implements OnInit {
 
-  images = [ 'https://images.tcdn.com.br/img/img_prod/991239/1640283515_vinhos_banner.jpg','https://www.meutelemaco.com.br/wp-content/uploads/Banner-Vinho-Site-Super-Telemaco.jpg', 'https://www.allshoppingdasbebidas.com.br/wp-content/uploads/2021/06/banner-vinho.png'];
+  images = [ 'https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/1640283515_vinhos_banner.webp','https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/Banner-Vinho-Site-Super-Telemaco.jpg', 'https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/banner-vinho.png'];
 
   constructor(private produtosService: ProdutosService) { }
   produtos: Produto[] = [];

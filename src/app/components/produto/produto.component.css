@@ -58,23 +58,26 @@
     height: 125px;
     width: 65px;
     margin-left: 0px;
+    object-fit: contain;
 }
 
 .img-taca {
     height: 30px;
     width: 30px;
+    object-fit: contain;
 }
 
 .img-tacaEs {
     height: 50px;
     width: 50px;
+    object-fit: contain;
 }
 
 .butao {
     width: 100px;
     background-color: rgb(199, 143, 61);
     color: rgb(135, 33, 46);
-    border: rgb(199, 143, 61); 
+    border: rgb(199, 143, 61);
     border-radius: 4px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

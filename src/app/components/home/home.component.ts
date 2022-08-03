@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent  {
 
-  images = ['https://media.istockphoto.com/photos/pouring-red-wine-into-the-glass-picture-id1314034344?b=1&k=20&m=1314034344&s=170667a&w=0&h=c5tU_kLbkchHqOQtDOqKqUVCNvNkvLZuEhKrXsdVt2c=', 'https://images5.alphacoders.com/443/thumb-1920-443997.jpg', 'https://i.pinimg.com/736x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg'];
+  images = ['https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/istockphoto-1314034344-170667a.jpg', 'https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/thumb-1920-443997.jpg', 'https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/48a1c3c3a2c198a7773500c5583ffc9f.jpg'];
 
 
   constructor() {
