@@ -10,11 +10,11 @@ body{
     width: 1000px;
     margin: auto;
   }
-  
+
   .carousel-caption h3{
     font-family: 'glamor';
   }
-  
+
   .carousel-caption p {
     padding-bottom: 35px;
   }
@@ -22,6 +22,7 @@ body{
   .foto{
     width: 100%;
     height: 300px;
+
   }
   .carrinho img {
     height: 40px;

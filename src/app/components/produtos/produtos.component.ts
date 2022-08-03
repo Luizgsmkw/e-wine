@@ -8,19 +8,19 @@ import { ProdutosService } from 'src/app/shared/services/produtos/produtos.servi
 })
 export class ProdutosComponent implements OnInit {
 
-  images = ['https://bebidasdosul.com.br/wine/modules/minicslider/uploads/Banner_Site_os_procurados_do_m%C3%AAs_PRODUTO.png', 'https://bebidasdosul.com.br/wine/modules/minicslider/uploads/Banner_Site_os_procurados_do_m%C3%AAs_CAMPANHA.png', 'https://bebidasdosul.com.br/wine/modules/minicslider/uploads/Prancheta_2-05-16.png'];
+  images = [ 'https://images.tcdn.com.br/img/img_prod/991239/1640283515_vinhos_banner.jpg','https://www.meutelemaco.com.br/wp-content/uploads/Banner-Vinho-Site-Super-Telemaco.jpg', 'https://www.allshoppingdasbebidas.com.br/wp-content/uploads/2021/06/banner-vinho.png'];
 
   constructor(private produtosService: ProdutosService) { }
   produtos: Produto[] = [];
   carrinho: Produto[] = [];
 
- 
+
   addCarrinho(produto:Produto){
     this.carrinho.push(produto);
     console.log("Produto adicionado");
     console.log(this.carrinho);
   }
-  
+
   produtoNoCarrinho(produto:Produto):boolean {
     return this.carrinho.includes(produto);
   }
