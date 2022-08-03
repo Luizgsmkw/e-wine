@@ -10,6 +10,11 @@ export class NavbarComponent implements OnInit {
   nomeDoApp: string = 'E-wine';
   isMenuCollapsed = true;
   constructor() { }
+  menuHamburguer = false;
+
+  menuClick() {
+    this.menuHamburguer = !this.menuHamburguer;
+  }
 
   ngOnInit(): void {
   }

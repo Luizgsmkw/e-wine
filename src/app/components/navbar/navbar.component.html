@@ -5,16 +5,28 @@
     <p><a id="titulo" [routerLink]="'/'">{{ nomeDoApp }}</a></p>
   </div>
 
-  <nav>
+
+  <div class="menu-hamburguer">
+    <button class="menu-hamburguer-button" type="button" (click)="menuClick()"><span class="bi bi-list menu-hamburguer"></span></button>
+    <nav class="navBar-hamburguer" *ngIf=" menuHamburguer">
+      <ul>
+        <li><a [routerLink]="'/indicacoes-de-vinhos'" (click)="isMenuCollapsed = true"><strong>Indicações</strong></a></li>
+        <li><a [routerLink]="'/produtos'" (click)="isMenuCollapsed = true"><strong>Produtos</strong></a></li>
+        <li><a [routerLink]="'/cadastro'" (click)="isMenuCollapsed = true"><strong>Cadastro</strong></a></li>
+        <li><a [routerLink]="'/feedback'" (click)="isMenuCollapsed = true"><strong>Feedback</strong></a></li>
+        <li><a [routerLink]="'/colaborador'" (click)="isMenuCollapsed = true"><strong>Área do Colaborador</strong></a></li>
+        <li class="login"><a [routerLink]="'/login'" (click)="isMenuCollapsed = true"><img src="https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/login1.png" alt=""></a></li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="nav-bar">
     <ul>
       <li><a [routerLink]="'/indicacoes-de-vinhos'" (click)="isMenuCollapsed = true"><strong>Indicações</strong></a></li>
       <li><a [routerLink]="'/produtos'" (click)="isMenuCollapsed = true"><strong>Produtos</strong></a></li>
       <li><a [routerLink]="'/cadastro'" (click)="isMenuCollapsed = true"><strong>Cadastro</strong></a></li>
       <li><a [routerLink]="'/feedback'" (click)="isMenuCollapsed = true"><strong>Feedback</strong></a></li>
       <li><a [routerLink]="'/colaborador'" (click)="isMenuCollapsed = true"><strong>Área do Colaborador</strong></a></li>
-
       <li class="login"><a [routerLink]="'/login'" (click)="isMenuCollapsed = true"><img src="https://raw.githubusercontent.com/Luizgsmkw/e-wine/main/src/assets/login1.png" alt=""></a></li>
-
     </ul>
   </nav>
 </div>

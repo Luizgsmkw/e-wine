@@ -1,3 +1,19 @@
+.tranca {
+  margin-bottom: 200px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.section-form, .section-carousel{
+width: 45%;
+}
+
+.section-form{
+  margin-right: 50px;
+}
 .titulo{
     margin-top: 30px;
     margin-left: 30px;
@@ -7,7 +23,7 @@
 }
 
 .btn-primary{
-    
+
     background-color:rgb(199, 143, 61)  ;
     border-radius: 4px;
     width: 120px;
@@ -15,8 +31,19 @@
     justify-content: center;
     color: white;
     border:rgb(199, 143, 61)  ;
-    
+
 }
 
 
 
+@media(max-width: 1080px){
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-form, .section-carousel{
+    width: 380px;
+
+    }
+}

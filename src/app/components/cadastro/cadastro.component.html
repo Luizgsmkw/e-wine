@@ -1,81 +1,82 @@
 <h1 class="titulo" style="margin-top: 100px"> Cadastre-se </h1>
 
-<div class="container" style="margin-top: 40px; margin-bottom: 100px; width: 1200px;">
-  <div class="row">
-    <div class="col">
-      <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()" class="m-1">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input formControlName="nome" id="nome" type="text" class="form-control" />
-          <small class="text-danger" *ngIf="nome?.touched && nome?.invalid">
-            <span *ngIf="nome?.hasError('required')">O nome é obrigatório!</span>
-            <span *ngIf="nome?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
-          </small>
-        </div>
-        <div class="mb-3">
-          <label for="Email" class="form-label">Email para login</label>
-          <input formControlName="email" id="email" type="text" class="form-control" />
-          <small class="text-danger" *ngIf="email?.touched && email?.invalid">
-            <span *ngIf="email?.hasError('required')">O email é obrigatório!</span>
-            <span *ngIf="email?.hasError('email')">Formato de email inválido!</span>
-            <span *ngIf="email?.hasError('onlySoulcode')">Domínio não permitido!</span>
-          </small>
-        </div>
-
-        <div class="mb-3">
-          <label for="endereco" class="form-label">Endereço</label>
-          <input formControlName="endereco" id="endereco" type="text" class="form-control" />
-          <small class="text-danger" *ngIf="endereco?.touched && endereco?.invalid">
-            <span *ngIf="endereco?.hasError('required')">O endereço é obrigatório!</span>
-            <span *ngIf="endereco?.hasError('maxlength')">O máximo são 50 caracteres!!</span>
-          </small>
-        </div>
-
-        <div class="mb-3">
-          <label for="senha" class="form-label">Senha</label>
-          <input formControlName="senha" id="senha" type="password" class="form-control" />
-          <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
-            <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
-            <span *ngIf="senha?.hasError('minlength')">O mínimo são 8 caracteres!!</span>
-          </small>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="maior de idade">
-                <label class="form-check-label" for="maior de idade" style="font-size: small; ">Declaro que tenho mais de 18 anos </label>
+<div class="tranca">
+    <div class="container">
+      <section class="section-form">
+        <div class="col">
+          <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()" class="m-1">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input formControlName="nome" id="nome" type="text" class="form-control" />
+              <small class="text-danger" *ngIf="nome?.touched && nome?.invalid">
+                <span *ngIf="nome?.hasError('required')">O nome é obrigatório!</span>
+                <span *ngIf="nome?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
+              </small>
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email para login</label>
+              <input formControlName="email" id="email" type="text" class="form-control" />
+              <small class="text-danger" *ngIf="email?.touched && email?.invalid">
+                <span *ngIf="email?.hasError('required')">O email é obrigatório!</span>
+                <span *ngIf="email?.hasError('email')">Formato de email inválido!</span>
+                <span *ngIf="email?.hasError('onlySoulcode')">Domínio não permitido!</span>
+              </small>
+            </div>
+            <div class="mb-3">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input formControlName="endereco" id="endereco" type="text" class="form-control" />
+              <small class="text-danger" *ngIf="endereco?.touched && endereco?.invalid">
+                <span *ngIf="endereco?.hasError('required')">O endereço é obrigatório!</span>
+                <span *ngIf="endereco?.hasError('maxlength')">O máximo são 50 caracteres!!</span>
+              </small>
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input formControlName="senha" id="senha" type="password" class="form-control" />
+              <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
+                <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
+                <span *ngIf="senha?.hasError('minlength')">O mínimo são 8 caracteres!!</span>
+              </small>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="maior de idade">
+                    <label class="form-check-label" for="maior de idade" style="font-size: small; ">Declaro que tenho mais de 18 anos </label>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <p style="font-size: small; ">Já é cadastrado? <a [routerLink]="'/login'" class=" href-sm">Faça seu login</a></p>
+                </div>
               </div>
             </div>
-            <div class="col-sm">
-              <p style="font-size: small; ">Já é cadastrado? <a [routerLink]="'/login'" class=" href-sm">Faça seu login</a></p>
-            </div>
-          </div>
+            <button class="btn btn-primary" [disabled]="cadastroForm.invalid">Cadastrar</button>
+          </form>
         </div>
-        <button class="btn btn-primary" [disabled]="cadastroForm.invalid">Cadastrar</button>
-      </form>
-    </div>
-    <div class="col" style="margin-top: 30px ;">
-      <ngb-carousel *ngIf="images">
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 110%;">
-          </div>
-          <div class="carousel-caption">
-            <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
+      </section>
 
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 110%;">
-          </div>
-          <div class="carousel-caption">
-            <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    </div>
+    <section class="section-carousel">
+      <div class="col" style="margin-top: 30px ;">
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 110%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 110%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </section>
   </div>
 </div>

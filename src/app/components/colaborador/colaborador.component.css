@@ -54,3 +54,25 @@ body {
   height: auto;
   margin: 0;
 }
+
+@media(max-width: 1080px){
+  body {
+    min-height: 45vh;
+    height: auto;
+    margin: 0;
+  }
+  .backgroundimagem{
+    background-image: url(imagem.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 45%;
+    margin-top: 0px;
+
+  }
+
+
+  #email, #senha{
+    width: 200px;
+  }
+
+}

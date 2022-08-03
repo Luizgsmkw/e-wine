@@ -1,53 +1,52 @@
 <h1 class="titulo" style="margin-top: 100px;"> Login do Usuário</h1>
-<div class="container" style="margin-top: 40px; margin-bottom: 100px; width: 1200px;">
-  <div class="row">
-    <div class="col">
-
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1">
-        <div class="mb-3">
-          <label for="login" class="form-label">Login</label>
-          <input formControlName="login" id="login" type="text" class="form-control" />
-          <small class="text-danger" *ngIf="login?.touched && login?.invalid">
-            <span *ngIf="login?.hasError('required')">O nome é obrigatório!</span>
-            <span *ngIf="login?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
-          </small>
-          <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
-        </div>
-
-        <div class="mb-3">
-          <label for="senha" class="form-label">Senha</label>
-          <input formControlName="senha" id="senha" type="password" class="form-control" />
-          <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
-            <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
-            <span *ngIf="senha?.hasError('minlength')">O mínimo são 8 caracteres!!</span>
-          </small>
-        </div>
-        <button class="btn btn-primary" type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Entrar</button>
-
-      </form>
-
-    </div>
-
-    <div class="col" style="margin-top: 30px ;">
-      <ngb-carousel *ngIf="images">
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 100%;">
+<div class="tranca">
+  <div class="container">
+    <section class="container-form">
+      <div class="col">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="m-1">
+          <div class="mb-3">
+            <label for="login" class="form-label">Login</label>
+            <input formControlName="login" id="login" type="text" class="form-control" />
+            <small class="text-danger" *ngIf="login?.touched && login?.invalid">
+              <span *ngIf="login?.hasError('required')">O nome é obrigatório!</span>
+              <span *ngIf="login?.hasError('minlength')">O mínimo são 5 caracteres!!</span>
+            </small>
+            <!-- <p>{{nome?.errors | json}}</p> enxergar o erro em tempo real -->
           </div>
-          <div class="carousel-caption">
-            <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
+          <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input formControlName="senha" id="senha" type="password" class="form-control" />
+            <small class="text-danger" *ngIf="senha?.touched && senha?.invalid">
+              <span *ngIf="senha?.hasError('required')">A senha é obrigatória!</span>
+              <span *ngIf="senha?.hasError('minlength')">O mínimo são 8 caracteres!!</span>
+            </small>
+          </div>
+          <button class="btn btn-primary" type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Entrar</button>
+        </form>
+      </div>
+    </section>
 
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 100%;">
-          </div>
-          <div class="carousel-caption">
-            <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    </div>
+    <section class="section-carousel">
+      <div class="col" style="margin-top: 30px ;">
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="foto" [src]="images[0]" alt="Random first slide" style="width: 100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Venha fazer parte do maior clube de vinho do mundo!</h3>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="foto" [src]="images[1]" alt="Random second slide" style="width: 100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Cadastre-se e receba desconto de 10% em sua primeira compra</h3>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </section>
   </div>
 </div>

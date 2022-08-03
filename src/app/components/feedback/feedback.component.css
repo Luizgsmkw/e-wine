@@ -1,3 +1,21 @@
+.tranca {
+  margin-bottom: 100px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.section-form, .section-carousel{
+  width: 45%;
+  }
+
+  .section-form{
+    margin-right: 50px;
+  }
+
 
 .btn-primary{
   background-color:rgb(199, 143, 61)  ;
@@ -7,13 +25,30 @@
   justify-content: center;
   color: white;
   border:rgb(199, 143, 61)  ;
-  
+
 
 }
 h1{
   text-align: center;
   margin-top: 20px;
   color: rgb(199, 143, 61) ;
+}
 
-  
+@media(max-width: 1080px){
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-form{
+    order: 0;
+  }
+  .section-carousel{
+    order: 1;
+  }
+  .section-form, .section-carousel{
+    width: 380px;
+
+    }
 }
